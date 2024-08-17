@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>VIRTUAL ART GALLERY</title>
+
+</head>
+<body>     
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <img src="images/logo.png" alt="">
+            <ul>
+                
+                <li><a href="#">VIRTUAL ART GALLERY</a></li>
+                <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <div class="about-bg"><h2>About</h2></div>
+        <div class="about-content">
+            <img src="images/about-img.jpg" alt="img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus adipisci eius doloribus veritatis ut recusandae animi voluptates illum corporis aperiam laborum culpa mollitia inventore, repellendus saepe debitis aut enim nam sunt similique sint ipsa explicabo. Totam fugit quis cum atque illo et ullam, nostrum molestiae nemo repellendus quam? Earum fugit perspiciatis nobis tempora ex doloribus, corporis inventore ad suscipit sequi mollitia nostrum, at deleniti nemo voluptates sunt maiores soluta necessitatibus excepturi fuga, porro delectus aliquam molestiae. Animi, molestiae non corporis quibusdam quas quaerat odit rerum illum quam laboriosam iure minus cumque recusandae tenetur quia ad molestias sequi ab libero porro officiis temporibus! Laudantium perspiciatis dolore modi rem placeat? Nesciunt minima dicta magni ad natus, voluptas aut! Minima voluptatem debitis explicabo voluptate maxime placeat, facilis beatae expedita incidunt autem perspiciatis laboriosam nihil doloremque magni, a at soluta fuga sit iste assumenda quibusdam excepturi mollitia exercitationem. Illum recusandae in quas quod fugit similique deserunt quo iste atque corrupti dolores, incidunt possimus enim labore beatae, est quis earum repellat rem qui tempora nemo minima? Aspernatur harum cumque, doloremque quibusdam cupiditate autem? Minima perspiciatis ratione earum corporis odio, error voluptates ullam amet eligendi quas reiciendis laborum aspernatur quam! Quis, voluptate distinctio animi molestias maxime culpa neque aut officiis sit suscipit repudiandae velit architecto temporibus. Veniam mollitia repellat rem animi ipsum minus, labore dicta earum distinctio necessitatibus accusantium inventore itaque nihil quam facilis possimus voluptatibus reiciendis ad. Explicabo aspernatur quia temporibus a esse omnis commodi qui nobis unde suscipit reiciendis eaque aut repudiandae, similique id quod, at tempora voluptates doloribus eum blanditiis! Repudiandae, perferendis. Corporis qui aut similique libero provident. Aut, at eveniet. Eveniet enim minus adipisci fugiat aspernatur, omnis qui assumenda! Asperiores fuga natus provident amet vitae, aliquid sed deleniti consequatur consectetur, quos fugiat exercitationem, itaque minus aspernatur repellat culpa consequuntur fugit explicabo illo.
+            </p>
+        </div>
+        <footer>
+            <div class="namelogo"><h3>Virtual Art Gallery</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, fugit? Fugiat beatae quae distinctio ut harum temporibus in iusto, esse ab debitis excepturi provident quaerat quos assumenda, iure veniam eos.</p>
+            </div>
+            <div class="navig">
+                <h4>Navigation</h4><br>
+                <a href="index.html">Home</a><br><br>
+                <a href="about.html">About</a><br><br>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social">
+                <h4>Follow us on social media</h4><br>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div class="newsletter">
+                <h4>Newsletter</h4><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum numquam aspernatur tenetur recusandae sed aperiam itaque dicta id obcaecati et, adipisci eius quibusdam voluptatem fugit unde necessitatibus! Ab, sequi repellendus.</p>
+            </div>
+        </footer>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'    
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>VIRTUAL ART GALLERY</title>
+
+</head>
+<body>     
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <img src="images/logo.png" alt="">
+            <ul>
+                
+                <li><a href="#">VIRTUAL ART GALLERY</a></li>
+                <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+                <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <div class="about-bg"><h2>CONTACT</h2></div>
+        <div class="form-contact">
+            
+    <form method = "get">
+       <div><label>Name : </label>
+        <input type="text" required name="Name" placeholder="enter your name"></div>
+       <div><label>Contact : </label>
+        <input type="tel" required name="contact" placeholder="enter your contact"></div>
+       <div><label>Email : </label>
+        <input type="email" required name="email" placeholder="enter your email"></div>
+       <div><label>Location : </label>
+        <select name="selected_option">
+        <option value="" disabled="disabled">disabled</option>
+        <option value="value1">Ludhiana</option>
+        <option value="value2">Amritsar</option>
+        <option value="value3">Jalandhar</option>
+        <option value="value4">Moga</option>
+        <option value="value8" selected="selected_option">Chandigarh</option>
+        <option value="value5">Patiala</option>
+        </select></div>
+        <label>Address : </label> 
+       <div>
+        <textarea name="address" cols="20" rows="10">Kindly write your address</textarea></div>
+       <div class="button" onclick= button() ><button type="submit" href="#">click me</button></div>  
+    </form>
+        </div>
+            
+        <footer>
+            <div class="namelogo"><h3>Virtual Art Gallery</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, fugit? Fugiat beatae quae distinctio ut harum temporibus in iusto, esse ab debitis excepturi provident quaerat quos assumenda, iure veniam eos.</p>
+            </div>
+            <div class="navig">
+                <h4>Navigation</h4><br>
+                <a href="index.html">Home</a><br><br>
+                <a href="about.html">About</a><br><br>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social">
+                <h4>Follow us on social media</h4><br>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div class="newsletter">
+                <h4>Newsletter</h4><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum numquam aspernatur tenetur recusandae sed aperiam itaque dicta id obcaecati et, adipisci eius quibusdam voluptatem fugit unde necessitatibus! Ab, sequi repellendus.</p>
+            </div>
+        </footer>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'    
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+        function button(){
+            const button = document.querySelector('.button')
+           button=  alert('Thanks for filling the form we will contact you in 24 hours');
+        }
+    </script>
+</body>
+</html>
